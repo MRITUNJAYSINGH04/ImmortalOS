@@ -1,9 +1,6 @@
 IMMORTAL OS
-Created using ZealOS
 
-Discord: https://discord.gg/rK6U3xdr7D
-Wiki: https://zeal-operating-system.github.io/ZealOS-wiki/
-Build Status: https://github.com/Zeal-Operating-System/ZealOS/actions/workflows/build.yml
+
 
 IMMORTAL OS is a rebranded and enhanced fork of ZealOS — a modernized, 64-bit operating system originally derived from TempleOS. It is designed for thinkers, hackers, and developers who want full control over their system and believe in the power of simplicity, transparency, and open access.
 
