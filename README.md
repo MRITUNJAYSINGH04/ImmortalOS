@@ -1,59 +1,66 @@
-# ZealOS
+IMMORTAL OS
+Created using ZealOS
 
-[![Discord](https://img.shields.io/discord/934200098144022609?color=7289DA&label=Discord&logo=discord&logoColor=white)](https://discord.gg/rK6U3xdr7D) [![](https://img.shields.io/badge/wiki-documentation-forestgreen)](https://zeal-operating-system.github.io/ZealOS-wiki/) [![Build ZealOS ISOs](https://github.com/Zeal-Operating-System/ZealOS/actions/workflows/build.yml/badge.svg)](https://github.com/Zeal-Operating-System/ZealOS/actions/workflows/build.yml)
+Discord: https://discord.gg/rK6U3xdr7D
+Wiki: https://zeal-operating-system.github.io/ZealOS-wiki/
+Build Status: https://github.com/Zeal-Operating-System/ZealOS/actions/workflows/build.yml
 
-The Zeal Operating System is a modernized fork of the 64-bit Temple Operating System. Guiding principles of development include transparency, full user control, and adherence to public-domain/open-source implementations.
+IMMORTAL OS is a rebranded and enhanced fork of ZealOS — a modernized, 64-bit operating system originally derived from TempleOS. It is designed for thinkers, hackers, and developers who want full control over their system and believe in the power of simplicity, transparency, and open access.
 
-![](/screenshots/screenshot2.png)
+Simplify, don't complicate. Make accessible, don't obfuscate.
 
-ZealOS strives to be simple, documented, and require as little of a knowledge gap as possible. One person should be able to comprehend the entire system in at least a semi-detailed way within a few days of study.
+Key Features
+32-bit color VBE graphics
 
-**Simplify, don't complicate; make accessible, don't obfuscate.**
+AHCI storage support
 
-Features in development include:
-  - [32-bit color VBE graphics](https://github.com/TempleProgramming/HolyGL)
-  - Fully-functional AHCI support
-  - Network card drivers and a networking stack
-  - UEFI booting via [BSD2-licensed Limine bootloader](https://github.com/limine-bootloader/limine) and [Public Domain ZealBooter prekernel](/zealbooter/src/zealbooter.c)
+Network card drivers (in progress)
 
-[Changes include](https://zeal-operating-system.github.io/Doc/ChangeLog.DD.html):
-  - 60 FPS
-  - VBE graphics with variable resolutions
-  - Reformatted code for readability
-  - Added comments and documentation
-  - HolyC -> ZealC
-  - System-wide renaming for clarity
+UEFI booting via Limine bootloader and ZealBooter prekernel
 
-## Getting started
+Rebranded UI and internal naming to reflect IMMORTAL OS identity
 
-### Prerequisites
+Full scripting and development in ZealC (formerly HolyC)
 
-- For running in a VM: Intel VT-x/AMD-V acceleration enabled in your BIOS settings. (Required to virtualize any 64-bit operating system properly.)
-    * If using Windows, [Hyper-V must be enabled.](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v#enable-the-hyper-v-role-through-settings)
-- Working knowledge of the C programming language.
+Philosophy
+IMMORTAL OS follows the original goals of TempleOS and ZealOS:
 
-To create a Distro ISO, run the `build-iso` script. Check the Wiki guide for details on [building an ISO](https://zeal-operating-system.github.io/ZealOS-wiki/Building-an-ISO). After creating an ISO, see the Wiki guides on installing in [VirtualBox](https://zeal-operating-system.github.io/ZealOS-wiki/Installing-(Virtualbox)), [VMWare](https://zeal-operating-system.github.io/ZealOS-wiki/Installing-(VMWare)), and [bare-metal](https://zeal-operating-system.github.io/ZealOS-wiki/Installing-(Bare%E2%80%90metal)).
+A system one person can understand completely
 
-### Contributing
+Public-domain and open-source implementation
 
-There are two ways to contribute. The first way involves everything happening inside the OS, as intended by Terry. After you've built the latest ISO, installed to a VM, made your changes, and powered off the VM, you can run the `sync` script to merge your changes to the repo.
+Real-time, instant boot, fully documented codebase
 
-Alternatively, you can edit repo files using an external editor, outside of the OS.
+Getting Started
+Requirements:
+A system or VM with Intel VT-x or AMD-V enabled
 
-Afterwards, you can make a pull request on the `master` branch.
+Basic knowledge of C programming
 
-## Background
+Build ISO:
+Run build-iso in the root directory.
+For details: https://zeal-operating-system.github.io/ZealOS-wiki/Building-an-ISO
 
-In around November of 2019, [VoidNV](https://web.archive.org/web/20210414181948/https://github.com/VoidNV) forked [ZenithOS](https://web.archive.org/web/20200811190005/https://github.com/VoidNV/ZenithOS) from TempleOS. [Releases of pre-git ZenithOS are currently archived on the mega.nz website.](https://mega.nz/#F!ZIEGmSRQ!qvL6Wk6THzE-dazkfT6N3Q) The repository was removed in August of 2020, and reuploaded to [ZenithOS](https://web.archive.org/web/20210630230454/https://github.com/ZenithOS/ZenithOS). The latest archived [front page](https://web.archive.org/web/20200811190005/https://github.com/VoidNV/ZenithOS/), [master.zip](https://web.archive.org/web/20200811190054/https://codeload.github.com/VoidNV/ZenithOS/zip/master), and [related links](https://web.archive.org/web/*/https://github.com/VoidNV/ZenithOS/*) can be found on archive.org.
+Install Guides:
+VirtualBox: https://zeal-operating-system.github.io/ZealOS-wiki/Installing-(Virtualbox)
 
-In July of 2021, ZealOS was forked from ZenithOS.
+VMWare: https://zeal-operating-system.github.io/ZealOS-wiki/Installing-(VMWare)
 
-## Screenshots
+Bare-metal: https://zeal-operating-system.github.io/ZealOS-wiki/Installing-(Bare%E2%80%90metal)
 
-Network Report, Gopher Client, FTP Client, GrDir, and AutoComplete, with Stars wallpaper
+Contributing
+You can contribute by editing files inside the OS after installing, and syncing changes via the sync script.
+Alternatively, edit files externally and submit a pull request on the main branch.
 
-![](/screenshots/screenshot3.png)
+Background
+ZealOS was forked from ZenithOS, which was a modernized fork of TempleOS. IMMORTAL OS continues that lineage, evolving it with a sharper, modernized identity and hacker-centric philosophy.
 
-32-bit color!
+Screenshots
+Screenshot 1: 32-bit graphics environment
 
-![](/screenshots/screenshot1.png)
+Screenshot 2: File manager and shell UI
+
+Screenshot 3: System tools and networking interface
+
+License
+IMMORTAL OS is based on ZealOS, which is in the Public Domain. All modifications retain the same open and unrestricted licensing to promote learning, freedom, and innovation.
